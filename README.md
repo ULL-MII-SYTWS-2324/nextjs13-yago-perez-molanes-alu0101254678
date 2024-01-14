@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/84e19446-005d-4bc9-8356-8c21b787ec1c/deploy-status)](https://app.netlify.com/sites/profound-centaur-3de316/deploys)
+
 ## Introduction
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
