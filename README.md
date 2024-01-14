@@ -299,6 +299,19 @@ Elegimos la rama sobre la cual se va a desplegar la app, en este caso, lo que ha
 
 ![Netlufy 4](./images/netlify-4.png)
 
-Y luego configuramos las opciones del despliegue, la mayoría se pueden quedar por defecto, ya que Netlify detecta que estamos trabajando con el framework NextJS, sin embargo, en la parte inferior, en la sección variables de entorno, tenemos que añadir la clave secreta de la API para poder hacer peticiones y recibir respuestas al modelo de OpenAI:
+Y luego configuramos las opciones del despliegue, la mayoría se pueden quedar por defecto, ya que Netlify detecta que estamos trabajando con el framework NextJS, sin embargo, destacar revisar dos configuraciones:
 
-![Netlify 5](./images/netlify.5.png)
+*   En el directorio base, escribir el directorio exacto en donde se encuentra alojado el proyecto de NextJS, no tiene porque scoincidir con la raiz del repositorio (como sucede en este proyecto).
+
+*   En la parte inferior, en la sección variables de entorno, tenemos que añadir la clave secreta de la API para poder hacer peticiones y recibir respuestas al modelo de OpenAI:
+
+![Netlify 5](./images/netlify-5.png)
+
+Una vez realiados estos pasos, ya podemos seleccionar la URL en donde se encuentra el despliegue de la aplicación:
+
+![Netlify 6](./images/netlify-6.png)
+
+![Netlify 7](./images/netlify-7.png)
+
+Ahora si abrimos el website debería estar disponible:
+
