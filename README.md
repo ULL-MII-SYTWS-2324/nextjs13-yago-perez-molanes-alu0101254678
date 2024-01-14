@@ -36,3 +36,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Experience along the leasson
+En esta primera lección se ha aprendido qué es NextJS, y qué diferencias tiene como framework de desarrollo web respecto a otras tecnologías relacionadas, es una primera toma de contacto para aquellos que no conocían este framework y para poder aprender lo básico, es decir, como funciona NextJS.
+
+Server side generation
+Static side generation
+Server components (Fetching data, Uso de información sensible, Mantener largas dependencias con el servidor)
+Se puede usar un nuevo directorio llamado app
+Streaming & Suspense (Stream content to the browser using Suspense boundaries)
+
+Necesitamos entender primero conceptos relacionados con React, ya que NextJS se basa sobre él.
+
+```sh
+npx create-next-app@13.4.9
+npm run dev
+```
+
+![screenshot-1](./images/screenshot-1.png)
+![screenshot-2](./images/screenshot-2.png)
