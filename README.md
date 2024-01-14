@@ -45,3 +45,39 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Experience along lesson
+En esta parte se ha aprendido a crear una página 404 que se renderiza cuando se accede a algún tipo de recurso que no existe, se han creado dos páginas, una para cuando se accede a un ticket que no existe, y otra para el resto del sitio web.
+
+```jsx
+import Link from "next/link"
+
+export default function NotFound() {
+  return (
+    <main className="text-center">
+      <h2 className="text-3xl">We Hit a Brick Wall.</h2>
+      <p>We could not find the ticket you were looking for.</p>
+      <p>Go back to all <Link href="/tickets">tickets</Link>.</p>
+    </main>
+  )
+}
+```
+
+```jsx
+import Link from "next/link"
+
+export default function NotFound() {
+  return (
+    <main className="text-center">
+      <h2 className="text-3xl">There was a problem.</h2>
+      <p>We could not find the page you were looking for.</p>
+      <p>Go back to the <Link href="/">dashboard</Link>.</p>
+    </main>
+  )
+}
+```
+
+Aquí se prueba su funcionamiento:
+
+![Captura 1](./images/screenshot-1.png)
+![Captura 2](./images/screenshot-2.png)
