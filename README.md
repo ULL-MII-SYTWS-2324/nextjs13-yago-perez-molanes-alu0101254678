@@ -61,6 +61,19 @@ export default function Tickets() {
 }
 ```
 
+Este es el componente que se renderiza mientras tanto:
+
+```jsx
+export default function Loading() {
+  return (
+    <main className="text-center">  
+      <h2 className="text-primary">Loading...</h2>
+      <p>Hopefully not for to long :)</p>
+    </main>
+  )
+}
+```
+
 La parte que se encuentra entre la directiva Suspense es el componente que se quiere renderizar, pero como no es instantáneo, se coloca otro componente en su luegar, mientras no termina de cargarse el componente original.
 
 ![Captura 1](./images/screenshot-1.png)
