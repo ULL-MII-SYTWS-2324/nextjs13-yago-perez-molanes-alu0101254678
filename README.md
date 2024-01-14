@@ -35,3 +35,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+#### Experience along the lesson
+En esta lección se aprende la estructura de directorios y cómo se manejan las rutas, resulta que el nombre del archivo es muy
+importante ya que la ruta va a estar basada en el nombre.
+Por ejemplo: (estamos creando componentes de servidor, no tenemos interactividad de momento)
+
+![Captura 1](./images/screenshot-1.png)
+![Captura 2](./images/screenshot-2.png)
+![Captura 3](./images/screenshot-3.png)
