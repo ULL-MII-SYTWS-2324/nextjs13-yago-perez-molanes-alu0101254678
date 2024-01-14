@@ -44,3 +44,33 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+### Experience along the lesson
+En esta parte del curso se enseña como funciona el renderizado estático, es decir, le vamos a dar más peso al cliente esta vez, para ello observamos como en el proyecto cambia la estructura.
+
+La página del layout, la página de la barra de navegación, la página de inicio y la página en la que se muestran todos los tickets se siguen quedando como están, pero la página para mostrar un tickete individual sí que cambia.
+
+```jsx
+import { notFound } from "next/navigation"
+
+export const dynamicParams = true // default val = true
+
+export async function generateStaticParams() {
+  const res = await fetch('http://localhost:4000/tickets')
+
+  const tickets = await res.json()
+ 
+  return tickets.map((ticket) => ({
+    id: ticket.id
+  }))
+}
+```
+
+Esa función se ejcuta para obtener un prerenderizado para todos los tickets, y servirlos cuando se necesiten, es decir, el array de objetos será utilizado por NextJS para generar las rutas estáticas para cada tickete en tiempo de compilación.
+
+Luego como novedad también se encuentra una página 404 por defecto.
+
+Esto sucede cuando se intenta acceder a un ticket que no existe:
+
+![Captura 1](./images/screenshot-1.png)
