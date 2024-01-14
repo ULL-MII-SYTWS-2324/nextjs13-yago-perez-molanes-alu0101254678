@@ -78,4 +78,4 @@ La parte que se encuentra entre la directiva Suspense es el componente que se qu
 
 ![Captura 1](./images/screenshot-1.png)
 
-
+Lo interesante de esto es que no se bloquean otras partes de la página, sino solamente lo estrictamente necesario, ya que es una característica que incorpora NextJS.
